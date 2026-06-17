@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Story Builder</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <h1>Story Builder</h1>
+        <p>Click each button to cycle through different words to build your own story</p>
+
+        <!-- Word Buttons (Using divs for style)-->
+        <div id="word-buttons">
+
+            <div class="slot">
+                <button onclick="cycleWord(0)">Character</button>
+                <span id="val-0"???></span>
+            </div>
+
+            <div class="slot">
+                <button onclick="cycleWord(1)">Location</button>
+                <span id="val-1">???</span>
+            </div>
+
+            <div class="slot">
+                <button onclick="cycleWord(2)">Action</button>
+                <span id="val-2">???</span>
+            </div>
+
+            <div class="slot">
+                <button onclick="cycleWord(3)">Object</button>
+                <span id="val-3">???</span>
+            </div>
+
+            <div class="slot">
+                <button onclick="cycleWord(4)">Feeling</button>
+                <span id="val-4">???</span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div id="actions">
+            <button onclick="buildStory()">Build My Story</button>
+            <button onclick="randomStory()">Random Story</button>
+            <button onclick="resetAll()">Reset</button>
+        </div>
+
+        <!-- Story Output Button -->
+        <div id="story-output">
+            <p id="story-text"></p>
+        </div>
+    </body>
+</html>
